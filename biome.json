@@ -16,7 +16,10 @@
   "linter": {
     "enabled": true,
     "rules": {
-      "recommended": true
+      "recommended": true,
+      "style": {
+        "useImportType": "off"
+      }
     }
   },
   "javascript": {
@@ -32,6 +35,9 @@
   "html": {
     "formatter": {
       "enabled": true
+    },
+    "parser": {
+      "interpolation": true
     }
   },
   "assist": {

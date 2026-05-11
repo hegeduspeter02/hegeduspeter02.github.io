@@ -1,5 +1,13 @@
-import { Component, signal } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 import { RouterOutlet } from '@angular/router';
+import {
+  FaIconLibrary,
+  FontAwesomeModule,
+} from '@fortawesome/angular-fontawesome';
+import { fas } from '@fortawesome/free-solid-svg-icons';
+import { translate } from '@jsverse/transloco';
+import { LanguageSwitcher } from './language-switcher/language-switcher';
 import { Sidebar } from './sidebar/sidebar';
 
 @Component({
@@ -7,10 +15,18 @@ import { Sidebar } from './sidebar/sidebar';
   imports: [
     RouterOutlet,
     Sidebar,
+    LanguageSwitcher,
+    FontAwesomeModule,
   ],
   templateUrl: './app.html',
   styleUrl: './app.css',
 })
 export class App {
-  protected readonly title = signal('hegedusp-website');
+  private readonly title = inject(Title);
+  private readonly faIconLibrary = inject(FaIconLibrary);
+
+  constructor() {
+    this.title.setTitle(`Hegedűs Péter | ${translate('personal.website')}`);
+    this.faIconLibrary.addIconPacks(fas);
+  }
 }

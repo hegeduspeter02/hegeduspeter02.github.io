@@ -1,0 +1,12 @@
+{
+  "personal": {
+    "website": "Személyes weboldal"
+  },
+  "about": {
+    "me": "Rólam"
+  },
+  "portfolio": "Munkáim",
+  "contact": {
+    "me": "Kapcsolat"
+  }
+}

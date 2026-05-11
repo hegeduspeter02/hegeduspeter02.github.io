@@ -1,0 +1,12 @@
+{
+  "personal": {
+    "website": "Personal website"
+  },
+  "about": {
+    "me": "About me"
+  },
+  "portfolio": "Portfolio",
+  "contact": {
+    "me": "Contact me"
+  }
+}

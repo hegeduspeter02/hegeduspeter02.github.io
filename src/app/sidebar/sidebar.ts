@@ -1,5 +1,6 @@
-import { Component, type OnInit } from '@angular/core';
-import type { MenuItem } from 'primeng/api';
+import { Component, OnInit } from '@angular/core';
+import { translate } from '@jsverse/transloco';
+import { MenuItem } from 'primeng/api';
 import { MenuModule } from 'primeng/menu';
 
 @Component({
@@ -15,15 +16,15 @@ export class Sidebar implements OnInit {
   ngOnInit() {
     this.items = [
       {
-        label: 'About me',
+        label: translate('about.me'),
         icon: 'pi pi-user',
       },
       {
-        label: 'Portfolio',
+        label: translate('portfolio'),
         icon: 'pi pi-briefcase',
       },
       {
-        label: 'Contact me',
+        label: translate('contact.me'),
         icon: 'pi pi-phone',
       },
     ];
