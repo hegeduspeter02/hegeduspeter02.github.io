@@ -14,9 +14,9 @@ import { Sidebar } from './sidebar/sidebar';
   selector: 'app-root',
   imports: [
     RouterOutlet,
-    Sidebar,
     LanguageSwitcher,
     FontAwesomeModule,
+    Sidebar,
   ],
   templateUrl: './app.html',
   styleUrl: './app.css',

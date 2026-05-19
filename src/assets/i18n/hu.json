@@ -1,4 +1,7 @@
 {
+  "sidebar": {
+    "header": "Menü"
+  },
   "personal": {
     "website": "Személyes weboldal"
   },

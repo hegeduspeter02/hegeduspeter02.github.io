@@ -7,9 +7,9 @@ import {
 } from '@angular/core';
 import { provideRouter } from '@angular/router';
 import { provideTransloco } from '@jsverse/transloco';
-import Aura from '@primeuix/themes/aura';
 import { providePrimeNG } from 'primeng/config';
 import { routes } from './app.routes';
+import { MyPreset } from './primeng/mypreset';
 import { initTransloco } from './transloco/transloco-init';
 import { TranslocoHttpLoader } from './transloco/transloco-loader';
 import { Language } from './utils/enums';
@@ -20,11 +20,12 @@ export const appConfig: ApplicationConfig = {
     provideRouter(routes),
     providePrimeNG({
       theme: {
-        preset: Aura,
+        preset: MyPreset,
         options: {
           darkModeSelector: false,
         },
       },
+      ripple: true,
     }),
     provideHttpClient(),
     provideTransloco({
