@@ -33,7 +33,7 @@ export class Sidebar implements OnInit {
       },
       {
         label: translate('contact.me'),
-        icon: 'pi pi-phone',
+        icon: 'pi pi-envelope',
       },
     ];
   }

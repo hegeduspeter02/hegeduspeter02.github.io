@@ -1,14 +1,17 @@
-<p-select
-  [options]="langs"
-  [ngModel]="selectedLang()"
-  (ngModelChange)="changeLang($event)"
-  optionLabel="name"
-  optionValue="code"
->
-  <ng-template #selectedItem #item let-lang>
-    <div class="flex items-center gap-2">
-      <span class="fi fi-{{ lang.flag }}"></span>
-      <span>{{ lang.name }}</span>
-    </div>
-  </ng-template>
-</p-select>
+<div class="absolute top-0 right-0 p-4 z-50">
+  <p-select
+    [options]="langs"
+    [ngModel]="selectedLang()"
+    (ngModelChange)="changeLang($event)"
+    optionLabel="name"
+    optionValue="code"
+    class="shadow-xl!"
+  >
+    <ng-template #selectedItem #item let-lang>
+      <div class="flex items-center gap-2">
+        <span class="fi fi-{{ lang.flag }}"></span>
+        <span>{{ lang.name }}</span>
+      </div>
+    </ng-template>
+  </p-select>
+</div>

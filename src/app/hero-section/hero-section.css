@@ -1,0 +1,14 @@
+.hero-section {
+  background-image:
+    linear-gradient(
+      to right bottom,
+      var(--p-primary-800),
+      80%,
+      var(--p-yellow-300)
+    ),
+    url('/assets/images/circuit-board.svg');
+}
+
+.hero-heading {
+  font-family: 'JetBrains Mono', ui-monospace;
+}

@@ -6,7 +6,7 @@
         <li class="rounded-lg overflow-hidden">
           <a
             pRipple
-            class="flex items-center cursor-pointer p-4 gap-4 hover:bg-emerald-100"
+            class="flex items-baseline cursor-pointer p-4 gap-4 hover:bg-emerald-100"
           >
             <i [class]="item.icon + ' text-gray-500'"></i>
             <span class="font-medium"> {{ item.label }} </span>
@@ -16,5 +16,9 @@
       </ul>
     </div>
   </p-drawer>
-  <p-button (click)="visible = true" icon="pi pi-bars" />
+  <p-button
+    class="fixed top-0 left-0 m-4 z-50 shadow-xl"
+    (click)="visible = true"
+    icon="pi pi-bars"
+  />
 </div>

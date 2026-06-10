@@ -7,6 +7,7 @@ import {
 } from '@fortawesome/angular-fontawesome';
 import { fas } from '@fortawesome/free-solid-svg-icons';
 import { translate } from '@jsverse/transloco';
+import { HeroSection } from './hero-section/hero-section';
 import { LanguageSwitcher } from './language-switcher/language-switcher';
 import { Sidebar } from './sidebar/sidebar';
 
@@ -17,6 +18,7 @@ import { Sidebar } from './sidebar/sidebar';
     LanguageSwitcher,
     FontAwesomeModule,
     Sidebar,
+    HeroSection,
   ],
   templateUrl: './app.html',
   styleUrl: './app.css',
