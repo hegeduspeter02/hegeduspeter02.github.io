@@ -1,17 +1,18 @@
 <div class="hero-section min-h-screen text-white">
-  <div class="px-6 py-10">
-    <div class="space-y-6">
-      <span class="py-2">Szia!</span>
-      <h1 class="hero-heading">
+  <div class="px-6 pt-24 pb-10">
+    <div class="space-y-3 sm:space-y-4 md:space-y-6">
+      <h1 class="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold">Szia!</h1>
+      <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl hero-heading leading-snug">
         Hegedűs Péter vagyok,
-        <span #typedText></span>.
+        <span class="block">
+          <span class="typed-element"></span>
+        </span>
       </h1>
-      <p>Ez a weboldal az általam elkészített projekteket mutatja be.</p>
+      <p class="text-base sm:text-lg md:text-lg lg:text-xl">Ez a weboldal az általam elkészített projekteket mutatja be.</p>
 
       <div class="flex gap-4">
         <p-button
           icon="pi pi-briefcase"
-          severity="secondary"
           label="{{ 'portfolio' | transloco }}"
           [raised]="true"
         ></p-button>
