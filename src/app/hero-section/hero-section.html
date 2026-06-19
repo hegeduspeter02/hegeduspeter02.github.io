@@ -1,31 +1,33 @@
 <div class="hero-section min-h-screen text-white">
   <div class="px-6 pt-24 pb-10">
-    <div class="space-y-3 sm:space-y-4 md:space-y-6">
-      <h1 class="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold">Szia!</h1>
-      <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl hero-heading leading-snug">
+    <div class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl mb-4">
+      <h1 class="font-normal opacity-80 tracking-wide mb-2">Szia!</h1>
+      <h1 class="hero-heading leading-snug">
         Hegedűs Péter vagyok,
-        <span class="block">
-          <span class="typed-element"></span>
-        </span>
+        <span class="block"> <span class="typed-element"></span> </span>
       </h1>
-      <p class="text-base sm:text-lg md:text-lg lg:text-xl">Ez a weboldal az általam elkészített projekteket mutatja be.</p>
+    </div>
+    <p class="text-base sm:text-lg md:text-lg lg:text-xl md:w-1/2">
+      Ez a weboldal a szakmai tapasztalataim bemutatására jött létre. Az oldalon
+      a webfejlesztéshez, valamint chipes időméréshez kapcsolódó munkáim és
+      eredményeim találhatók.
+    </p>
 
-      <div class="flex gap-4">
-        <p-button
-          icon="pi pi-briefcase"
-          label="{{ 'portfolio' | transloco }}"
-          [raised]="true"
-        ></p-button>
-        <p-button
-          icon="pi pi-envelope"
-          severity="secondary"
-          label="{{ 'contact.me' | transloco }}"
-          [raised]="true"
-        ></p-button>
-      </div>
+    <div class="flex gap-4">
+      <p-button
+        icon="pi pi-briefcase"
+        label="{{ 'portfolio' | transloco }}"
+        [raised]="true"
+      ></p-button>
+      <p-button
+        icon="pi pi-envelope"
+        severity="secondary"
+        label="{{ 'contact.me' | transloco }}"
+        [raised]="true"
+      ></p-button>
     </div>
 
-    <div>
+    <div class="hidden">
       <p-avatar label="P" shape="circle" size="xlarge"></p-avatar>
     </div>
   </div>
