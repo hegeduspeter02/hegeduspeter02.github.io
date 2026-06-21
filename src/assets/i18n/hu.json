@@ -2,14 +2,20 @@
   "sidebar": {
     "header": "Menü"
   },
+  "hero": {
+    "welcome": "Szia!",
+    "name": "Hegedűs Péter vagyok,",
+    "description": "Ez a weboldal a szakmai tapasztalataim bemutatására jött létre. Az oldalon a webfejlesztéshez, valamint chipes időméréshez kapcsolódó munkáim és eredményeim találhatók.",
+    "roles": "szoftverfejlesztő."
+  },
+  "portfolio": "Munkáim",
+  "contact": {
+    "me": "Kapcsolat"
+  },
   "personal": {
     "website": "Személyes weboldal"
   },
   "about": {
     "me": "Rólam"
-  },
-  "portfolio": "Munkáim",
-  "contact": {
-    "me": "Kapcsolat"
   }
 }

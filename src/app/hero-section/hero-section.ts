@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { TranslocoPipe } from '@jsverse/transloco';
+import { TranslocoPipe, translate } from '@jsverse/transloco';
 import { AvatarModule } from 'primeng/avatar';
 import { ButtonModule } from 'primeng/button';
 import Typed from 'typed.js';
@@ -18,7 +18,7 @@ export class HeroSection implements OnInit {
   ngOnInit() {
     new Typed('.typed-element', {
       strings: [
-        'szoftverfejlesztő.',
+        translate('hero.roles'),
       ],
       typeSpeed: 70,
     });

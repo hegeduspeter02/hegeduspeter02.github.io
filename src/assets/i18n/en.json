@@ -2,14 +2,20 @@
   "sidebar": {
     "header": "Menu"
   },
+  "hero": {
+    "welcome": "Hello!",
+    "name": "I am Péter Hegedűs,",
+    "description": "This website was created to showcase my professional experience, featuring my work, projects, and achievements in web development and chip-based timing systems.",
+    "roles": "software developer."
+  },
+  "portfolio": "Portfolio",
+  "contact": {
+    "me": "Contact me"
+  },
   "personal": {
     "website": "Personal website"
   },
   "about": {
     "me": "About me"
-  },
-  "portfolio": "Portfolio",
-  "contact": {
-    "me": "Contact me"
   }
 }

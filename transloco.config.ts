@@ -1,11 +1,10 @@
 import { TranslocoGlobalConfig } from '@jsverse/transloco-utils';
-import { Language } from './src/app/utils/enums';
 
 const config: TranslocoGlobalConfig = {
-  defaultLang: Language.Hungarian,
+  defaultLang: 'hu',
   langs: [
-    Language.English,
-    Language.Hungarian,
+    'en',
+    'hu',
   ],
   keysManager: {},
 };

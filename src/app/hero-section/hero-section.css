@@ -1,14 +1,32 @@
 .hero-section {
-  background-image:
-    linear-gradient(
-      to right bottom,
-      var(--p-primary-800),
-      80%,
-      var(--p-yellow-300)
-    ),
-    url('/assets/images/circuit-board.svg');
+  background-image: linear-gradient(
+    to right bottom,
+    var(--p-primary-800),
+    80%,
+    var(--p-yellow-300)
+  );
 }
 
 .hero-heading {
   font-family: 'JetBrains Mono', ui-monospace;
+}
+
+path {
+  stroke: var(--p-primary-500);
+  stroke-width: 2;
+  fill: none;
+  stroke-linecap: round;
+  stroke-dasharray: 16 4 20 36;
+  stroke-dashoffset: 76; /* 304 / 4 */
+  animation: flow 4s linear infinite;
+  filter: drop-shadow(0 0 3px var(--p-primary-500));
+}
+
+@keyframes flow {
+  0% {
+    stroke-dashoffset: 76; /* 304 / 4 */
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
 }
