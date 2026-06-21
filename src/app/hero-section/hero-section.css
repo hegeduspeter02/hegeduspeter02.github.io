@@ -11,6 +11,22 @@
   font-family: 'JetBrains Mono', ui-monospace;
 }
 
+.p-button-accent {
+  --p-button-primary-background: var(--p-yellow-200);
+  --p-button-primary-hover-background: var(--p-yellow-300);
+  --p-button-primary-active-background: var(--p-yellow-400);
+
+  --p-button-primary-border-color: var(--p-yellow-200);
+  --p-button-primary-hover-border-color: var(--p-yellow-300);
+  --p-button-primary-active-border-color: var(--p-yellow-400);
+
+  --p-button-primary-color: var(--p-surface-700);
+  --p-button-primary-hover-color: var(--p-surface-800);
+  --p-button-primary-active-color: var(--p-surface-900);
+
+  --p-button-primary-focus-ring-color: var(--p-yellow-600);
+}
+
 path {
   stroke: var(--p-primary-500);
   stroke-width: 2;

@@ -1,4 +1,4 @@
-<div class="hero-section min-h-screen text-white">
+<div class="hero-section min-h-screen text-white pointer-events-none">
   <div class="inset-0 absolute opacity-10">
     <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
       <defs>
@@ -33,6 +33,7 @@
 
     <div class="flex gap-4">
       <p-button
+        class="p-button-accent"
         icon="pi pi-briefcase"
         label="{{ 'portfolio' | transloco }}"
         [raised]="true"
