@@ -9,6 +9,7 @@ import { fas } from '@fortawesome/free-solid-svg-icons';
 import { translate } from '@jsverse/transloco';
 import { HeroSection } from './hero-section/hero-section';
 import { LanguageSwitcher } from './language-switcher/language-switcher';
+import { ChipTiming } from './portfolio/chip-timing/chip-timing';
 import { Sidebar } from './sidebar/sidebar';
 
 @Component({
@@ -19,6 +20,7 @@ import { Sidebar } from './sidebar/sidebar';
     FontAwesomeModule,
     Sidebar,
     HeroSection,
+    ChipTiming,
   ],
   templateUrl: './app.html',
   styleUrl: './app.css',
